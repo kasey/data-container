@@ -12,7 +12,7 @@ RUN \
   rm -rf /var/lib/apt/lists/*
 RUN sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
 
-RUN apt-get install -y python2.7-dev
+RUN apt-get install -y python
 RUN apt-get install -y python python-dev python-distribute python-pip
 RUN pip install -r requirements.txt
 
