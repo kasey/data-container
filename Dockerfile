@@ -6,7 +6,9 @@ RUN  apt-get update && \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget
 
+RUN apt-get install pkg-config
 RUN apt-get install -y python2.7 python-dev python-distribute python-pip
+RUN apt-get install freetype* libpng12-dev libpng12-0
 
 # Set environment variables.
 ENV HOME /root
