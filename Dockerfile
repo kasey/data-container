@@ -17,5 +17,7 @@ WORKDIR /root
 # split requirements.txt into separate files to make experiementing faster
 ADD easy_requirements.txt /root/easy_requirements.txt
 ADD hard_requirements.txt /root/hard_requirements.txt
+RUN pip install -r trivial_requirements.txt
 RUN pip install -r easy_requirements.txt
 RUN pip install -r hard_requirements.txt
+RUN pip install -r more_requirements.txt

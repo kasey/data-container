@@ -1,0 +1,4 @@
+ipdb==0.8
+marisa-trie==0.7
+profilehooks==1.8.0
+lxml==3.4.2

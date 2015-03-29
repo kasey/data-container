@@ -1,6 +1,3 @@
 networkx==1.9.1
-ipdb==0.8
-marisa-trie==0.7
-profilehooks==1.8.0
 numpy==1.9.2
 pandas==0.15.2
