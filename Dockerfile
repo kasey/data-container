@@ -8,7 +8,7 @@ RUN  apt-get update && \
 
 RUN apt-get install pkg-config
 RUN apt-get install -y python2.7 python-dev python-distribute python-pip
-RUN apt-get install freetype* libpng12-dev libpng12-0
+RUN apt-get install libfreetype6-dev libfreetype6 libpng12-dev libpng12-0
 
 # Set environment variables.
 ENV HOME /root
