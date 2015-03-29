@@ -11,6 +11,7 @@ RUN \
   apt-get install -y byobu curl git htop man unzip vim wget && \
   rm -rf /var/lib/apt/lists/*
 
+RUN apt-get install -y python2.7-dev
 RUN apt-get install -y python python-dev python-distribute python-pip
 RUN pip install -r requirements.txt
 
