@@ -14,5 +14,8 @@ RUN apt-get install libfreetype6-dev libfreetype6 libpng12-dev libpng12-0
 ENV HOME /root
 WORKDIR /root
 
-ADD requirements.txt /root/requirements.txt
-RUN pip install -r requirements.txt
+# split requirements.txt into separate files to make experiementing faster
+ADD easy_requirements.txt /root/easy_requirements.txt
+ADD hard_requirements.txt /root/hard_requirements.txt
+RUN pip install -r easy_requirements.txt
+RUN pip install -r hard_requirements.txt
